@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="number" id="num1" oninput="calculate()">
+        <input type="number" id="num2" oninput="calculate()">
+        <input type="number" id="num3">
+    </form>
+    <script>
+        function calculate() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let num3 = document.getElementById('num3');
+
+            let total1 = num1 * num2;
+            num3.value = total1;
+        }
+    </script>
+</body>
+</html>
